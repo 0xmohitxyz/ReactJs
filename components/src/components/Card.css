@@ -1,0 +1,58 @@
+/* Card container */
+
+
+.card {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 40px;
+    width: 320px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 22px 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* Title section */
+.title h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+/* Description section */
+.description p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+/* Price highlight */
+.description p span {
+    font-weight: 600;
+    color: #16a34a;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
+}

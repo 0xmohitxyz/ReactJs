@@ -1,0 +1,81 @@
+/* Navbar container */
+.navbar {
+  width: 100%;
+  height: 64px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  /* Sticky navbar */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  /* Subtle shadow */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Common styles for all nav items */
+.navbar span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline animation */
+.navbar span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background-color: #16a34a;
+  transition: width 0.3s ease;
+}
+
+.navbar span:hover {
+  color: #16a34a;
+}
+
+.navbar span:hover::after {
+  width: 100%;
+}
+
+/* Book Now button style */
+.BookNow {
+  padding: 8px 18px;
+  background-color: #16a34a;
+  color: #ffffff !important;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.BookNow::after {
+  display: none;
+}
+
+.BookNow:hover {
+  background-color: #15803d;
+  transform: translateY(-1px);
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 12px 16px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .navbar span {
+    font-size: 15px;
+  }
+}
