@@ -1,0 +1,19 @@
+.btn{
+    background-color: white;
+    color: black;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    width: fit-content;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 5%;
+}
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
