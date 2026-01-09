@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  
+  background-color: #000;
+  padding: 30px;
+}
+.Parent{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.card {
+  /* margin: 20px; */
+  height: 400px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.top img {
+  border: 1px solid rgb(38, 38, 38);
+  border-radius: 50%;
+  margin: 4%;
+  padding: 1%;
+}
+
+.top button {
+  cursor: pointer;
+  margin-top: 5%;
+  margin-right: 5%;
+  padding: 1%;
+  height: 40px;
+  width: 90px;
+}
+
+.center {
+  padding: 3%;
+}
+
+.center h3,
+span {
+  padding: 3%;
+}
+
+.center h3 {
+  font-weight: bold;
+}
+
+.center span {
+  font-weight: 500;
+  font-size: small;
+  color: gray;
+}
+
+.center h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.center div {
+  margin-top: 3px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.center div h4 {
+  background-color: rgb(234, 228, 228);
+  border: 1px solid gray;
+  border-radius: 10%;
+  padding: 3px;
+}
+
+.bottom {
+  /* padding-left: 5%; */
+  margin-top: 33%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.bottom p {
+  color: gray;
+}
+
+.bottom button {
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 75px;
+  border-radius: 10%;
+  border: 2px solid black;
+}
