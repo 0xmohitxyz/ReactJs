@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  background-color: #000;
+  color: #fff;
+}
+
+.num{
+  height: 100px;
+  width: 100px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15%;
+  font-size: 100px;
+}
+
+button{
+  margin: 2%;
+  font-size: 40px;
+}
